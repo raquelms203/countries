@@ -1,0 +1,26 @@
+section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    border: none;
+    outline: 1px grey solid;
+    padding: 6px 12px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.input-error {
+    color: brown;
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+}

@@ -1,0 +1,14 @@
+<app-go-back-arrow></app-go-back-arrow>
+<main *ngIf="name == undefined">
+</main>
+<main *ngIf="name != undefined" class="container-details">
+    <h1>{{ country?.name }}</h1>
+    <div class="header-images">
+    <img src="{{ country?.flag }}"  height="160">
+     <img src="{{ country?.symbol }}" height="160">
+    </div>
+    <div class="body-details">
+        <pre class="title-details">Population: {{ country?.population?.toLocaleString() }}</pre>
+        <pre class="title-details">Area: {{ country?.area?.toLocaleString() }}</pre>
+    </div>
+</main>

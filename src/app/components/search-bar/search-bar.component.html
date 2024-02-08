@@ -1,0 +1,7 @@
+<section>
+    <input placeholder="Search" #input [formControl]="search" (ngModelChange)="updateValueSearch()">
+    {{ input.focus() }}
+    <div *ngIf='search.hasError("minlength")' class="input-error">
+        Digit at least 3 characters
+    </div>
+</section>

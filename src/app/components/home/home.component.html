@@ -1,0 +1,5 @@
+<main>
+    <h1>Search country</h1>
+    <app-search-bar (valueSearch)="fetchCountries($event)"></app-search-bar>
+    <app-list-countries [listCountries]="listCountries" (selectedCountry)="setSelectedCountry($event)"></app-list-countries>
+</main>

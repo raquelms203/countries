@@ -1,0 +1,17 @@
+<section>
+    @for(country of listCountries; track $index) {
+        <div class="card-item" routerLink="country/{{country.name}}" (click)="clickCountry(country)">
+            <img class="flag-country" src="{{ country.flag }}">
+            <div class="info-country">
+                <span>
+                    Name: {{ country.name }}
+                </span>
+                <span>
+                    Population: {{ country.population.toLocaleString() }}
+                </span>
+            </div>
+        </div>
+    } @empty {
+        <span>No itens </span>
+    }
+</section>

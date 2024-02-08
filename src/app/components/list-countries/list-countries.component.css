@@ -1,0 +1,30 @@
+section {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.card-item {
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.flag-country {
+    width: 120px;
+    height: 100px;
+}
+
+.info-country {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
